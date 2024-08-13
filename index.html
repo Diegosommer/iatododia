@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Química Orgânica - Flashcards</title>
+  <style>
+    /* CSS Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* General Styles */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f1f1f1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      padding: 20px;
+    }
+
+    .flashcard-container {
+      perspective: 1000px;
+      width: 100%;
+      max-width: 800px;
+    }
+
+    .flashcard {
+      position: relative;
+      width: 100%;
+      height: 400px;
+      transition: transform 0.6s;
+      transform-style: preserve-3d;
+      margin-bottom: 20px;
+    }
+
+    .flashcard-front, .flashcard-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      border-radius: 10px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .flashcard-front {
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .flashcard-front h3 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .flashcard-back {
+      background-color: #fff;
+      color: #333;
+      transform: rotateY(180deg);
+      text-align: left;
+      padding: 20px;
+    }
+
+    .flashcard.flipped {
+      transform: rotateY(180deg);
+    }
+
+    /* Card Colors */
+    .card1 .flashcard-front {
+      background-color: #ff6b6b;
+    }
+
+    .card2 .flashcard-front {
+      background-color: #ffa500;
+    }
+
+    .card3 .flashcard-front {
+      background-color: #2ecc71;
+    }
+
+    .card4 .flashcard-front {
+      background-color: #3498db;
+    }
+
+    .card5 .flashcard-front {
+      background-color: #9b59b6;
+    }
+
+    .card6 .flashcard-front {
+      background-color: #34495e;
+    }
+
+    .card7 .flashcard-front {
+      background-color: #e67e22;
+    }
+
+    .card8 .flashcard-front {
+      background-color: #16a085;
+    }
+
+    .card9 .flashcard-front {
+      background-color: #c0392b;
+    }
+
+    .card10 .flashcard-front {
+      background-color: #8e44ad;
+    }
+  </style>
+</head>
+<body>
+  <div class="flashcard-container">
+    <div class="flashcard card1">
+      <div class="flashcard-front">
+        <h3>Alcanos</h3>
+        <p>Hidrocarbonetos saturados com ligações simples entre os átomos de carbono. Exibem alta estabilidade e baixa reatividade química.</p>
+      </div>
+      <div class="flashcard-back">
+        <h3>Características dos Alcanos:</h3>
+        <ul>
+          <li>Fórmula geral: CnH2n+2</li>
+          <li>Ligações C-C e C-H são simples</li>
+          <li>Não possuem ligações múltiplas</li>
+          <li>Exemplo: metano (CH4), etano (C2H6), propano (C3H8)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="flashcard card2">
+      <div class="flashcard-front">
+        <h3>Alcenos</h3>
+        <p>Hidrocarbonetos insaturados com uma ligação dupla entre os átomos de carbono. Exibem maior reatividade devido à presença da ligação pi.</p>
+      </div>
+      <div class="flashcard-back">
+        <h3>Características dos Alcenos:</h3>
+        <ul>
+          <li>Fórmula geral: CnH2n</li>
+          <li>Possuem uma ligação dupla C=C</li>
+          <li>São mais reativos que os alcanos</li>
+          <li>Exemplo: eteno (C2H4), propeno (C3H6), buteno (C4H8)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="flashcard card3">
+      <div class="flashcard-front">
+        <h3>Alquinos</h3>
+        <p>Hidrocarbonetos insaturados com uma ligação tripla entre os átomos de carbono. Exibem alta reatividade e são importantes intermediários em síntese orgânica.</p>
+      </div>
+      <div class="flashcard-back">
+        <h3>Características dos Alquinos:</h3>
+        <ul>
+          <li>Fórmula geral: CnH2n-2</li>
+          <li>Possuem uma ligação tripla C≡C</li>
+          <li>São ainda mais reativos que os alcenos</li>
+          <li>Exemplo: etino (C2H2), propino (C3H4), butino (C4H6)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="flashcard card4">
+      <div class="flashcard-front">
+        <h3>Grupos Funcionais</h3>
+        <p>Grupos de átomos que conferem propriedades características a uma molécula orgânica. Determinam a reatividade e as propriedades físicas do composto.</p>
+      </div>
+      <div class="flashcard-back">
+        <h3>Alguns Grupos Funcionais:</h3>
+        <ul>
+          <li>Hidroxila (-OH)</li>
+          <li>Carbonila (C=O)</li>
+          <li>Carboxila (-COOH)</li>
+          <li>Amino (-NH2)</li>
+          <li>Haleto (C-X, X = F, Cl, Br, I)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="flashcard card5">
+      <div class="flashcard-front">
+        <h3>Reações de Substituição</h3>
+        <p>Reações em que um átomo ou grupo é substituído por outro átomo ou grupo em uma molécula. Importantes na síntese de compostos orgânicos.</p>
+      </div>
+      <div class="flashcard-back">
+        <h3>Exemplos de Reações de Substituição:</h3>
+        <ul>
+          <li>Halogenação de alcanos</li>
+          <li>Reações de hidroxilação</li>
+          <li>Reações de nitração</li>
+          <li>Reações de sulfonação</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="flashcard card6">
+      <div class="flashcard-front">
+        <h3>Reações de Adição</h3>
+        <p>Reações em que dois ou mais reagentes se combinam para formar um único produto. Comum em compostos insaturados, como alcenos e alquinos.</p>
+      </div>
+      <div class="flashcard-back">
+        <h3>Exemplos de Reações de Adição:</h3>
+        <ul>
+          <li>Adição de halogênios a alcenos (ex: adição de Br2 a eteno)</li>
+          <li>Adição de H2 a alcenos e alquinos (hidrogenação)</li>
+          <li>Adição de ácidos a alcenos (ex: adição de HBr a propeno)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="flashcard card7">
+      <div class="flashcard-front">
+        <h3>Reações de Eliminação</h3>
+        <p>Reações em que um ou mais átomos são removidos de uma molécula, geralmente resultando na formação de uma ligação dupla ou tripla.</p>
+      </div>
+      <div class="flashcard-back">
+        <h3>Exemplos de Reações de Eliminação:</h3>
+        <ul>
+          <li>Desidratação de álcoois</li>
+          <li>Eliminação de HX de haletos de alkila</li>
+          <li>Conversão de alcanos em alcenos (desidrogenação)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="flashcard card8">
+      <div class="flashcard-front">
+        <h3>Isomeria</h3>
+        <p>A existência de dois ou mais compostos com a mesma fórmula molecular, mas diferentes propriedades físicas e químicas.</p>
+      </div>
+      <div class="flashcard-back">
+        <h3>Tipos de Isomeria:</h3>
+        <ul>
+          <li>Isomeria de cadeia</li>
+          <li>Isomeria de posição</li>
+          <li>Isomeria geométrica (cis-trans)</li>
+          <li>Isomeria óptica (estereoisomeria)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="flashcard card9">
+      <div class="flashcard-front">
+        <h3>Mecanismos de Reação</h3>
+        <p>As etapas detalhadas que descrevem como uma reação química ocorre no nível molecular. Permitem entender a cinética e a termodinâmica das reações.</p>
+      </div>
+      <div class="flashcard-back">
+        <h3>Principais Mecanismos de Reação:</h3>
+        <ul>
+          <li>Mecanismo SN2 (substituição nucleofílica bimolecular)</li>
+          <li>Mecanismo SN1 (substituição nucleofílica unimolecular)</li>
+          <li>Mecanismo E2 (eliminação bimolecular)</li>
+          <li>Mecanismo E1 (eliminação unimolecular)</li>
+          <li>Mecanismo de adição eletrofílica</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="flashcard card10">
+      <div class="flashcard-front">
+        <h3>Ressonância</h3>
+        <p>A capacidade de uma molécula de ter mais de uma estrutura de Lewis válida, resultando em uma estrutura híbrida. Afeta a estabilidade e a reatividade.</p>
+      </div>
+      <div class="flashcard-back">
+        <h3>Características da Ressonância:</h3>
+        <ul>
+          <li>Envolve a deslocalização de elétrons pi</li>
+          <li>Leva à estabilização da molécula</li>
+          <li>Exemplos: benzeno, íon carboxilato, íon nitrato</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const flashcards = document.querySelectorAll('.flashcard');
+
+    flashcards.forEach(flashcard => {
+      flashcard.addEventListener('click', () => {
+        flashcard.classList.toggle('flipped');
+      });
+    });
+  </script>
+</body>
+</html>
